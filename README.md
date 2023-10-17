@@ -25,7 +25,7 @@ In this project, two API endpoint were called.
 ## Platform
 This project was run on jupyter notebook on localhost. 
 
-## Data Preprocessing and Analysis
+## Steps to Reproduce these Results
 Data Acquistion, Data Preparation, and Data Analysis are key phases within this project:
 
 * Step 1: Getting the Article, Population and Region Data
@@ -37,7 +37,15 @@ Data Acquistion, Data Preparation, and Data Analysis are key phases within this 
 * Step 4: Analysis
   - Analyis included calculating total-articles-per-population (a ratio representing the number of articles per person) and high-quality-articles-per-population among other metrics.
 * Step 5: Results
-  - Results are obtained by calculating certain metrics
+  - Results are obtained by calculating certain metrics like:
+      1. Top 10 US states by coverage: The 10 US states with the highest total articles per capita (in descending order) .
+      2. Bottom 10 US states by coverage: The 10 US states with the lowest total articles per capita (in ascending order) .
+      3. Top 10 US states by high quality: The 10 US states with the highest high quality articles per capita (in descending order) .
+      4. Bottom 10 US states by high quality: The 10 US states with the lowest high quality articles per capita (in ascending order).
+      5. Census divisions by total coverage: A rank ordered list of US census divisions (in descending order) by total articles per capita.
+      6. Census divisions by high quality coverage: Rank ordered list of US census divisions (in descending order) by high quality articles per capita.
+
+
 
 
 
