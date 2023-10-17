@@ -22,6 +22,7 @@ In this project, two API endpoint were called.
   * Output: Metadata about the article and probabilities of it belonging to a label and a final prediction.
   * A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=drive_link). This code was modified to include HTTPS status code checks.
   * The [labelings](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment) were learned based on articles in Wikipedia that were peer-reviewed using the Wikipedia content assessment procedures.
+  * An [API Key](https://api.wikimedia.org/wiki/Authentication) is required to call this API. More information about this can be found in the notebook linked above.
 
 # Platform
 This project was run on jupyter notebook on localhost. 
@@ -54,6 +55,10 @@ Jupyter Notebook: detailed comments for data acquistion, processing, and analysi
 README File: Offers a general overview of the project, outlining its objectives, data sources, data processing procedures, and standards for reproducibility.
 
 LICENSE File: Contains the MIT LICENSE for the project's code, ensuring it is freely usable.
+
+# Special Considerations
+* It should be noted that not all article titles might have ORES labels. However, in this projet all articles yielded a response.
+* The ORES API accepts 5000 requests per hour per user.
 
 # License
 This project is open-source and follows the MIT License. You are free to use and modify the code according to the terms of the MIT License.
