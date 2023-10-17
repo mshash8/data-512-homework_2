@@ -98,11 +98,9 @@ Wikipedia, as a data source, also offers numerous opportunities for active engag
 
 3. Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might still be appropriate and useful, despite its inherent limitations and biases?
 
-Utilizing Wikipedia data can prove valuable in various research phases, including exploratory data analysis and literature surveys. Wikipedia's enduring presence and comprehensive coverage make it a frequent top result in Google searches, ensuring access to a wide array of information.
+Utilizing Wikipedia data can prove valuable in various research phases, including exploratory data analysis and literature surveys. Wikipedia's long-term presence makes it a frequent top result in Google searches, ensuring access to a wide array of information.
 
-Furthermore, with a 22-year history, Wikipedia serves as a constantly updated repository of historical data across diverse subjects. This historical context can be invaluable when conducting research to gain insights into the past and explore related topics.
-
-Finally, Wikipedia's open editing model allows individuals from around the world to contribute their discoveries to the platform. This collaborative approach resembles a form of crowdsourcing, where society collectively gathers data, contributing to reduced bias in data collection.
+Furthermore, with a 22-year history, Wikipedia serves as a constantly updated repository of historical data across diverse subjects. This historical context can be useful when conducting research to gain insights into the past and explore related topics. This could be especially useful in time series analysis tasks.
 
 
 
