@@ -1,4 +1,45 @@
 # data-512-homework_2
+# Project Goal
+The primary goal of this project is to conduct an in-depth analysis of Wikipedia article traffic patterns spanning from 2015 to 2023. To achieve this objective, we leverage the capabilities of the Wikimedia REST API. The API provides a wealth of information, including article view counts, article titles, access methods (mobile or desktop), and more. Our aim is to store this data in JSON files and subsequently perform comprehensive data visualization and analysis.
+
+# Data Acquistion and API Documentation
+
+## Data Acquistion
+The section below details the steps for data acquistion. We have:
+
+1. A csv [file](https://drive.google.com/file/d/1khouDmMaZyKo0y5WkFj4lu7g8o35x_98/view?usp=drive_link) defining the subset of the city names that have articles on Wikipedia. 
+2. A [file](https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html) that contains estimated populations of all US states for 2022. This can be downloaded from: https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html 
+3. A [spreadsheet](ttps://docs.google.com/spreadsheets/d/14Sjfd_u_7N9SSyQ7bmxfebF_2XpR8QamvmNntKDIQB0/edit?usp=drive_link) listing the states in each regional division.
+
+## API Documentation
+In this project, two API endpoint were called. 
+1. [API Info](https://www.mediawiki.org/wiki/API:Info)
+  * Input Parameters: This API takes page_title as a parameter, taken from the first csv file mentioned above.
+  * Output: This returns and range of metadata on an article, including the most current revision ID of the article page. This revision ID is used for the ORES API Call.
+  * A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/15UoE16s-IccCTOXREjU3xDIz07tlpyrl/view?usp=drive_link) and this sample code is licensed [CC-BY](https://creativecommons.org/licenses/by/4.0/). 
+3. [ORES](https://www.mediawiki.org/wiki/ORES)
+  * Input Parameters: This API requires a specific revision ID of an article to make a label prediction.
+  * Output: Metadata about the article and probabilities of it belonging to a label and a final prediction.
+  * A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=drive_link). This code was modified to include HTTPS status code checks.
+
+## Platform
+This project was run on jupyter notebook on localhost. 
+
+## Data Preprocessing and Analysis
+Data Acquistion, Data Preparation, and Data Analysis are key phases within this project:
+
+* Step 1: Getting the Article, Population and Region Data
+  - Data is obtained from the data sources provided by the instructor and this is used to make API calls to get further information required for analysis.
+* Step 2: Getting Article Quality Predictions
+  - The data from the previous step is used to call the Page Info and ORES API to obtain information required for analysis.
+* Step 3: Combining the Datasets
+  - After retrieving and including the ORES data for each article, it is required to merge the wikipedia data and population data together. This is further merged with the US Census regional-division.
+* Step 4: Analysis
+  - Analyis included calculating total-articles-per-population (a ratio representing the number of articles per person) and high-quality-articles-per-population among other metrics.
+* Step 5: Results
+  - Results are obtained by calculating certain metrics
+
+
 
 # Research Implications
 1. What biases did you expect to find in the data (before you started working with it), and why?
