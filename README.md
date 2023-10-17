@@ -21,6 +21,7 @@ In this project, two API endpoint were called.
   * Input Parameters: This API requires a specific revision ID of an article to make a label prediction.
   * Output: Metadata about the article and probabilities of it belonging to a label and a final prediction.
   * A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=drive_link). This code was modified to include HTTPS status code checks.
+  * The [labelings](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment) were learned based on articles in Wikipedia that were peer-reviewed using the Wikipedia content assessment procedures.
 
 # Platform
 This project was run on jupyter notebook on localhost. 
