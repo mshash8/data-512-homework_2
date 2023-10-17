@@ -22,10 +22,10 @@ In this project, two API endpoint were called.
   * Output: Metadata about the article and probabilities of it belonging to a label and a final prediction.
   * A code snippet is used in the Data Acquistion phase from [notebook](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=drive_link). This code was modified to include HTTPS status code checks.
 
-## Platform
+# Platform
 This project was run on jupyter notebook on localhost. 
 
-## Steps to Reproduce these Results
+# Steps to Reproduce these Results
 Data Acquistion, Data Preparation, and Data Analysis are key phases within this project:
 
 * Step 1: Getting the Article, Population and Region Data
@@ -45,8 +45,37 @@ Data Acquistion, Data Preparation, and Data Analysis are key phases within this 
       5. Census divisions by total coverage: A rank ordered list of US census divisions (in descending order) by total articles per capita.
       6. Census divisions by high quality coverage: Rank ordered list of US census divisions (in descending order) by high quality articles per capita.
 
+# Documentation
+This project adheres to recommended best practices for replication and documentation:
 
+Jupyter Notebook: detailed comments for data acquistion, processing, and analysis.
 
+README File: Offers a general overview of the project, outlining its objectives, data sources, data processing procedures, and standards for reproducibility.
+
+LICENSE File: Contains the MIT LICENSE for the project's code, ensuring it is freely usable.
+
+# License
+This project is open-source and follows the MIT License. You are free to use and modify the code according to the terms of the MIT License.
+
+# Output file
+
+| Column            | datatype 
+| :---------------- | :------: 
+| state             |   string 
+| regional_division |   string 
+| population        |   int    
+| article_title     |   string 
+| revision_id       |   int
+| article_quality   |   string
+
+**Note**
+The article quality can take values: 
+1. FA - Featured article
+2. GA - Good article (sometimes called A-class)
+3. B - B-class article
+4. C - C-class article
+5. Start - Start-class article
+6. Stub - Stub-class article
 
 
 # Research Implications
