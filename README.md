@@ -65,6 +65,8 @@ This project is open-source and follows the MIT License. You are free to use and
 
 # Output file
 
+**Path:** data/wp_scored_city_articles_by_state.csv
+
 | Column            | datatype 
 | :---------------- | :------: 
 | state             |   string 
@@ -83,6 +85,19 @@ The article quality can take values:
 5. Start - Start-class article
 6. Stub - Stub-class article
 
+# Data Folder
+The data folder contains the data files used for analysis and the intermediary ones produced in the process.
+1. NST-EST2022-ALLDATA.csv - estimated populations of all US states for 2022.
+2. US States by Region - US Census Bureau.xlsx - listing the states in each regional division.
+3. us_cities_by_state_SEPT.2023.csv - File with subset of city names that have articles on Wikipedia
+4. wp_scored_city_articles_by_state.csv - final output csv file
+5. ORES_Response/ores_dict1.json - first ORES response
+6. ORES_Response/ores_dict1.json - second ORES response
+7. ORES_Response/ores_dict1.json - third ORES response
+8. ORES_Response/ores_dict1.json - fourth ORES response
+9. ORES_Response/consolidated_ores.json - the four consolidated ores response (21519 rows)
+10. ORES_Response/predictions.json - A file mapping article_title to predicted ORES label
+11. Page_Info_Response/title_revid_dict.json - Output of the Page Info API
 
 # Research Implications
 As part of this project, I had the opportunity to explore some of the biases present on Wikipedia, gain a better understanding of data acquisition through APIs, and uncover some surprising results. It was fascinating to learn about the limitations of APIs, such as the maximum number of requests allowed, and the significance of creating access keys while monitoring access to APIs. Additionally, our investigation yielded interesting insights, revealing that certain states considered 'traveled to' and popular had fewer articles per capita than others. Lastly, working with Python libraries like pandas, requests, JSON, and others enabled me to discover the methods and capabilities these libraries offer.
