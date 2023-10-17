@@ -80,6 +80,7 @@ The article quality can take values:
 
 
 # Research Implications
+As part of this project, I had the opportunity to explore some of the biases present on Wikipedia, gain a better understanding of data acquisition through APIs, and uncover some surprising results. It was fascinating to learn about the limitations of APIs, such as the maximum number of requests allowed, and the significance of creating access keys while monitoring access to APIs. Additionally, our investigation yielded interesting insights, revealing that certain states considered 'traveled to' and popular had fewer articles per capita than others. Lastly, working with Python libraries like pandas, requests, JSON, and others enabled me to discover the methods and capabilities these libraries offer.
 1. What biases did you expect to find in the data (before you started working with it), and why?
 
 Before working with the data, I anticipated discovering more information for popular and highly populated cities, while expecting less information for cities that are both less populated and less renowned. Considering Wikipedia's open nature for public editing, I inferred that cities with larger populations and more attractions would likely have more extensive content on their pages. However, during the analysis, I found this assumption to be incorrect. The top 10 states in the analysis also surprised me, as I initially expected them to be more densely populated and frequently traveled to.
