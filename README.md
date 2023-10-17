@@ -2,12 +2,14 @@
 
 # Research Implications
 1. What biases did you expect to find in the data (before you started working with it), and why?
+
 Before working with the data, I anticipated discovering more information for popular and highly populated cities, while expecting less information for cities that are both less populated and less renowned. Considering Wikipedia's open nature for public editing, I inferred that cities with larger populations and more attractions would likely have more extensive content on their pages. However, during the analysis, I found this assumption to be incorrect. The top 10 states in the analysis also surprised me, as I initially expected them to be more densely populated and frequently traveled to.
 
 Furthermore, I expected potential bias within the content itself, as there could be a higher representation of one group submitting edits to Wikipedia. This might perpetuate their beliefs as the truth within the articles, potentially causing the most popular opinion to be accepted as the sole truth.
 
 
 2. What might your results suggest about (English) Wikipedia as a data source?
+
 The research from this study suggests that Wikipedia continues to serve as a vast repository of information on a wide range of topics. Information is available for almost every city in the United States, and one could argue that there is data on nearly every city that has been visited and documented on Wikipedia. This wealth of information is valuable for individuals conducting exploratory data analysis in virtually any field, as it covers a significant number of topics.
 
 In our analysis, it was fascinating to observe that the top 10 states with the highest number of articles per capita were not necessarily the most popular or frequently visited states. This finding suggests that Wikipedia may not exhibit the biases one might initially assume. There appears to be a fair representation of information about states from across the country, which is interesting.
